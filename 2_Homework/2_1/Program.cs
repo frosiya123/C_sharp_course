@@ -5,16 +5,16 @@
 //782 -> 8
 //918 -> 1
 
+int TakeNum(int num)
+ { 
+    return num / 10 % 10;
+ } 
+ Console.WriteLine(TakeNum(678)); 
+ Console.WriteLine(TakeNum(456));  
 
-//int TakeNum(int num)
-//{
-//      return num / 10 % 10;  
-//}  
-// Console.WriteLine(TakeNum(678)); 
  
 
-void Num ();
 
 
 
-Num(123);
+
