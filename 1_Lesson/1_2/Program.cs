@@ -3,7 +3,6 @@ if(day == 1)
 {
     Console.WriteLine("Monday");
 }
-
 if(day == 2)
 {
     Console.WriteLine("Tuesday");  
