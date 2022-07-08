@@ -4,9 +4,8 @@
 //2, 4 -> 16
 
 //int Numb(int numA, int numB)
-int numA = int.Parse(Console.ReadLine());
-int numB = int.Parse(Console.ReadLine());
-int Numb = numA;
+//int numA = int.Parse(Console.ReadLine());
+//int numB = int.Parse(Console.ReadLine());
 {
     int res = numA;
     for (int i = 2; i <= numB; i++)
