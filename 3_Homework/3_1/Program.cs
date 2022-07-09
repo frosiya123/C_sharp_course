@@ -27,7 +27,7 @@
 //Вывод 
 int Number = int.Parse(Console.ReadLine());
 int razr = 10000;
-if(Number > 100000 || Number < 10000 )
+if(Number > 100000 || Number < 10000 )  //Проверка введенного числа
 {
     Console.WriteLine("Введите пятизначное число");
     return;
@@ -36,7 +36,7 @@ if(Number > 100000 || Number < 10000 )
 while (Number > 10)
 {
    
-    int first = Number / razr;
+    int first = Number / razr; 
     int last = Number % 10;
      if( first != last )
      {
