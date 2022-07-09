@@ -3,9 +3,8 @@
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
 
-//int Numb(int numA, int numB)
-//int numA = int.Parse(Console.ReadLine());
-//int numB = int.Parse(Console.ReadLine());
+int Numb(int numA, int numB)
+
 {
     int res = numA;
     for (int i = 2; i <= numB; i++)
@@ -15,5 +14,5 @@
     return res;
 }
 
-Console.WriteLine(Numb);
-//я хочу вводить данные через консоль. Не получается вывод
+Console.WriteLine(Numb(3,5));
+
