@@ -13,9 +13,13 @@ void Print(double[] arr)
 double[] MassNums(int size)
 {
     double[] arr = new double[size];
+    Random n_new = new Random();
     for (int i = 0; i < size; i++)
     {
-        arr[i] = new Random().Next(-10, 10);
+       // arr[i] = new Random().Next(-10, 10);
+       arr[i] = Math.Round(n_new.NextDouble() * (10 + 12) - 10, 2); 
+       //для вещественных числе добавляется запись на стр.16 и запись на 
+       //строке 20
     }
     return arr;
 }
