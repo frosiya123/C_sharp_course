@@ -1,9 +1,10 @@
-﻿//Задача 1: Задайте двумерный массив размером m×n, 
-//заполненный случайными целыми числами.
-//m = 3, n = 4.
-//1 4 8 19
-//5 -2 33 -2
-//77 3 8 1
+﻿// Задайте двумерный массив. Найдите сумму элементов
+//главной диагонали.
+//Например, задан массив:
+//1 4 7
+//5 9 2
+//8 4 2
+//Сумма элементов главной диагонали: 1+9+2 = 12
 
 void Print(int[,] arr)
 {
@@ -34,7 +35,16 @@ int[,] MassNums(int row, int column, int from, int to)
     }
     return arr;
 }
-
+int SumElDiag (int[,] Array)
+{
+int rows = Array.GetLength(0);
+int sum = 0;
+for (int i = 0; i < rows; i++)
+{
+sum += Array[i,i];
+}
+return sum;
+}
 
 Console.WriteLine("Enter the number of rows: ");
 int row = int.Parse(Console.ReadLine());
@@ -44,3 +54,5 @@ int column = int.Parse(Console.ReadLine());
 
 int[,] arr_1 = MassNums(row, column, 1, 101);
 Print(arr_1);
+
+Console.WriteLine(SumElDiag(arr_1));
