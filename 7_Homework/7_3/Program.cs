@@ -33,9 +33,7 @@ int[,] MassNums(int row, int column, int from, int to)
         for (int j = 0; j < column; j++)
         {
             arr[i, j] = new Random().Next(from, to);
-            //Console.Write($"({arr[i,j]} )");
         }
-        //Console.WriteLine();
     }
     return arr;
 }
@@ -43,7 +41,6 @@ void Average(int[,] Array)
 {
     int row = Array.GetLength(0);
     int column = Array.GetLength(1);
-    //double sum = 0;
     for (int i = 0; i < row; i++)
     {
         double sum = 0;
