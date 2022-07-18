@@ -20,7 +20,7 @@ void Print(double[,] arr)
     Console.WriteLine();
 }
 
-double[,] MassNums(int row, int column, int from, int to)
+double[,] MassNums(int row, int column)
 {
     double[,] arr = new double[row, column];
     Random n_new = new Random();
@@ -42,5 +42,5 @@ int row = int.Parse(Console.ReadLine());
 Console.WriteLine("Enter the number of columns: ");
 int column = int.Parse(Console.ReadLine());
 
-double[,] arr_1 = MassNums(row, column, 1, 101);
+double[,] arr_1 = MassNums(row, column);
 Print(arr_1);
