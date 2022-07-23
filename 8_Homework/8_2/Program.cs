@@ -1,6 +1,18 @@
 ﻿// Задайте прямоугольный двумерный массив. Напишите программу,
 //которая будет находить строку с наименьшей суммой элементов
 
+Console.WriteLine("Введите число строк: ");
+int row = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число столбцов: ");
+int column = int.Parse(Console.ReadLine());
+Console.WriteLine();
+
+int[,]array_1 = MasNumbers(row, column, 1, 30);
+Print(array_1);
+
+MinRow(array_1);
+
 void Print(int[,] array){
     int row_size = array.GetLength(0);
     int column_size = array.GetLength(1);
@@ -41,16 +53,3 @@ void MinRow(int[,] array){
     Console.WriteLine();
     Console.WriteLine($"Наименьшая сумма элементов: {minSum} находится в строке {minRow}.");
 }
-
-
-Console.WriteLine("Введите число строк: ");
-int row = int.Parse(Console.ReadLine());
-
-Console.WriteLine("Введите число столбцов: ");
-int column = int.Parse(Console.ReadLine());
-Console.WriteLine();
-
-int[,]array_1 = MasNumbers(row, column, 1, 30);
-Print(array_1);
-
-MinRow(array_1);

@@ -1,6 +1,19 @@
 ﻿// Задайте двумерный массив. Напишите программу,
 //которая упорядочит по убыванию элементы каждой строки массива
 
+Console.WriteLine("Введите число строк: ");
+int row = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число столбцов: ");
+int column = int.Parse(Console.ReadLine());
+Console.WriteLine();
+
+int[,]array_1 = MasNumbers(row, column, 1, 30);
+Print(array_1);
+
+SortNumbers(array_1);
+Print(array_1);
+
 void Print(int[,] array){
     int row_size = array.GetLength(0);
     int column_size = array.GetLength(1);
@@ -33,19 +46,4 @@ void SortNumbers(int[,]array){
         }
     }  
 }
-
-
-
-Console.WriteLine("Введите число строк: ");
-int row = int.Parse(Console.ReadLine());
-
-Console.WriteLine("Введите число столбцов: ");
-int column = int.Parse(Console.ReadLine());
-Console.WriteLine();
-
-int[,]array_1 = MasNumbers(row, column, 1, 30);
-Print(array_1);
-
-SortNumbers(array_1);
-Print(array_1);
 
